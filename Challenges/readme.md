@@ -1,11 +1,21 @@
 
+# Challenges:
 
-Notes:
-* Poderia otimizar a busa se reaproveita-se o valor anterior!
+## Find large palindromic prime numbers in the decimal expansion of π (3,1415…)
+
+* Q1 > Find the first 9-digit palindromic prime contained in the decimal expansion of π (3,1415…)
+  - Is: 398989893 Starting At 6577
+  - Just Run `yarn q1` and wait 1 minute to complete
+
+
+
+## Notes:
+
+- [x] Poderia otimizar a busa se reaproveita-se o valor anterior!
 
 
 
 
 
-Used Fonts:
+## Used Fonts:
 - http://ajennings.net/blog/a-million-digits-of-pi-in-9-lines-of-javascript.html#:~:text=Increasing%20the%20number%20of%20digits,pi%20%2F%20(10n%20**%2020n))%3B

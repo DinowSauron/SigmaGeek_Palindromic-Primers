@@ -6,6 +6,7 @@
   "licenses": ["MIT"],
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
+    "q1": "ts-node-dev src/first-nine-digits.ts",
     "build": "npx tsc"
   },
   "devDependencies": {
