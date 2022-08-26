@@ -1,39 +1,36 @@
+              
+// this is not work properly...
+function isPrime(num: string){
 
-IsPrimeNumber(100000007)
+  var isPrime = true;
+  const numLong = BigInt(num)
+  
+  if(numLong % 2n === 0n || numLong % 3n === 0n )
+    return false;
 
-function IsPrimeNumber(num: number){
-
-  const startDate = new Date();
-  let isPrime = true;
-  for(var x=2;x<=num;x++){
-    if(num % x === 0 && x != num){
-      isPrime = false;
-      break;
+  var i = 5n
+  while(i*i <= numLong){
+    if(numLong % i === 0n || (numLong % (i+2n)) === 0n){
+      return false;
     }
-    // console.log(num,"/",x,"=", num / x)
-  }
-  if(isPrime){
-    console.log("This number is PRIME")
-  }
-  console.log("Finished PrimeCheck In "+ (new Date().getTime() - startDate.getTime()) + "ms")
+    i=i+6n
+    // console.log(i)
 
-
-  /*
-  function primeNumbers(num:number) {
-    let numbers = new Array();
-    for (var i = 0; i <= num; i++) {
-      if (isPrime(i)){
-        numbers.push(i);
-      }
+    if(i >= 100*100*100){
+      // blah
     }
-    return numbers;
   }
-  function isPrime(num:number) {
-    for(let i = 2; i <num; i++)
-      if(num % i === 0) {
-          return false
-      };
-    return num > 1;
-  }
-  console.log(primeNumbers(13));*/
+  
+  return true;
 }
+
+function isPrime2(num: string) {
+  
+  var isPrime = true;
+  const numLong = BigInt(num)
+  
+  // const d = ()
+}
+
+console.log(isPrime2('999915579464975519999'))
+
