@@ -79,7 +79,7 @@ Verify Rate: 9 Bi/h.
   - So, Put this in the config.ts:
    ```ts
    return {
-     digitsToFind: 21,
+    digitsToFind: 21,
     useArchive: {
       archivesLocation: "./pi_archives/",
       archivesNames: "pi_dec_1t_01.txt",
@@ -102,6 +102,15 @@ Verify Rate: 9 Bi/h.
   - and Run `yarn start` and wait a ~180seconds
   - the result will be saved at `./saves/primes_x-21.txt`
 
+---
+
+* Q3 > Find the largest palindromic prime contained in the decimal expansion of π (3,1415…)
+  - Is: idk...
+  - i will try finding small palindromic and if i found an small palindromic i will increasing the search to find
+  - and i will do it in backwards, searching 999 to 0, because my experiments say more digits, more far away they are
+  - my code gets the position, so its not a problem.
+
+  - verifyed: 999, 10, 
 <br/>
 <br/>
 
@@ -154,6 +163,8 @@ N  | Pos          | N/Pos NPP     |   P.P.
 * Fazer download de 100-Bilhões demora umas 10 horas... + descompactar + dividir em pedaços (Split)
 * Percebi só depois de fazer a busca em 216.000.000.000 de numeros que o javascript arredonda numeros com mais de 16 digitos... no caso to procurando um com 21, e ele arredondando nunca vo saber se ele é primo ou não... começar tudo denovo...
 * coloque o numero do output + o numero do archiveX_100b
+* Trabalhando em multithreading: multithread realizado com sucesso! de 11hrs passou para umas 5hrs, posso verificar x2 por dia!
+* Procurando por numeros com tamanhos pares(20) e impares(21) ao mesmo tempo, quando é localizado um número o indice aumenta para ver se o palindromo pode ser maior que o esperado !
 
 - [x] Poderia otimizar a busca se reaproveita-se o valor anterior!
 - [x] Refatoração do código para envio.

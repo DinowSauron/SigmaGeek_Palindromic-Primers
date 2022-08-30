@@ -7,9 +7,9 @@
     "MIT"
   ],
   "scripts": {
-    "test": "ts-node-dev src/tests.ts",
+    "mt": "ts-node-dev src/MultiThread.ts",
     "start": "ts-node-dev src/find-any-digits.ts",
-    "q2": "ts-node-dev src/get-pi-delivery.ts",
+    "q3": "ts-node-dev src/worker.ts",
     "build": "npx tsc"
   },
   "devDependencies": {
