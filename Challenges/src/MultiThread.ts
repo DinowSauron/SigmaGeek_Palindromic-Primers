@@ -1,7 +1,7 @@
 import fs from "fs";
 import settings from "./config";
 import {
-  Worker, isMainThread, parentPort, workerData
+  Worker, isMainThread, workerData
 } from "worker_threads";
 import findDigits from "./worker";
 
@@ -47,6 +47,7 @@ if (isMainThread) {
   const data = workerData;
 
   setTimeout(() => {
+    // console.log(data.workIndex)
     findDigits.Start({
       searchRange: data.search,
       processIndex: data.workIndex
@@ -54,7 +55,7 @@ if (isMainThread) {
 
     
     console.log("Finished job:", data.workIndex);
-  }, data.workIndex * 1000);
+  }, data.workIndex * 2548);
   
 
   

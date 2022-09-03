@@ -29,14 +29,15 @@ function Start(props: FindBiggestProps) {
   function DetectPalindromicsInPI(pi='3141', piStart=0){
     
     const startDate = new Date();
-    let lastDigitsOdd = [0];
-
     const digitsNum = digits;
 
-    for(var n=0; n < pi.length;n++) {
+    let lastDigits = [0];
+    
+
+    for(let n=0;n < pi.length;n++) {
       // Create the last digits
-      lastDigitsOdd.length = digitsNum - 1;
-      var currentDigits = [Number(pi[n]), ...(lastDigitsOdd)];
+      lastDigits.length = digitsNum - 1;
+      const currentDigits = [Number(pi[n]), ...(lastDigits)];
 
 
       if(Detect(currentDigits)){ // odd
@@ -49,8 +50,9 @@ function Start(props: FindBiggestProps) {
           digits = newDigit;
           
       }
-      currentDigits.pop();
-      if(Detect(currentDigits, false)){ // even
+
+      currentDigits.pop(); // remove 1 to even
+      if(Detect(currentDigits)){ // even
         recall = true;
         const index =  n-digitsNum+1;
         IsPrime(currentDigits.toString().replaceAll(",", ""), index + piStart);
@@ -60,29 +62,22 @@ function Start(props: FindBiggestProps) {
         if(digits < newDigit) 
           digits = newDigit;
       }
-      lastDigitsOdd = currentDigits;
 
 
+      lastDigits = currentDigits;
+      
+      //(n % settings.debug.logRange == 0) ? debugLog(`Detect x"${n.toString().padStart(10," ")}  In ${(piStart + n).toLocaleString()}`):""
 
-
-      function Detect(currentDigits: number[], log=true) {
-        if(n >= digitsNum-1) {
-          const index =  n-digitsNum+1;
-          if(IsPalindromic(currentDigits, index)){
-            return true;
-          };
-        }
-        if(log && n % settings.debug.logRange == 0){ // every 1.000k
-          debugLog(`Detect x"${n.toString().padStart(10," ")}  In ${(piStart + n).toLocaleString()}`)
-        }
+      function Detect(currentDigits: number[]) {
+        const index =  n-currentDigits.length+1;
+        if(IsPalindromic(currentDigits, index)){
+          return true;
+        };
+        return false;
       }
     }
+
     debugLog("End in "+ (new Date().getTime() - startDate.getTime()) + "ms");
-
-
-
-
-
 
 
 
@@ -98,13 +93,15 @@ function Start(props: FindBiggestProps) {
         }
       
       if(isPalindromic){
-        debugLog("Find Palindromic:", num.join(""), " > at ", index + piStart + settings.useArchive.archiveX_100b);
+        debugLog("Find Palindromic:", num.join(""), " > at ", (index + piStart + 1));// + settings.useArchive.archiveX_100b));  VERIFY THIS POSITION
 
         return true;
-        // IsPrime(num.toString().replaceAll(",", ""), index + piStart);
       }
       return false;
     }
+
+
+    
 
 
     
@@ -156,7 +153,7 @@ function Start(props: FindBiggestProps) {
   if(fs.existsSync(`./saves/MultiThread.json`))
     nextArchive = Number(JSON.parse(fs.readFileSync(`./saves/MultiThread.json`, {encoding:'utf8'})).nextArchive);
     fs.writeFileSync(`./saves/MultiThread.json`, JSON.stringify({nextArchive: nextArchive+1}));
-  console.log(nextArchive)
+  debugLog(nextArchive)
 
   
   
