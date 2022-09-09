@@ -66,7 +66,7 @@ function Start(props: FindBiggestProps) {
 
       lastDigits = currentDigits;
       
-      //(n % settings.debug.logRange == 0) ? debugLog(`Detect x"${n.toString().padStart(10," ")}  In ${(piStart + n).toLocaleString()}`):""
+      (n % settings.debug.logRange == 0) ? debugLog(`Detect x"${n.toString().padStart(10," ")}  In ${(piStart + n).toLocaleString()}`):""
 
       function Detect(currentDigits: number[]) {
         const index =  n-currentDigits.length+1;
