@@ -171,4 +171,4 @@ N  | Pos              | N/Pos NPP     |   P.P.
 
 - [x] Poderia otimizar a busca se reaproveita-se o valor anterior!
 - [x] Refatoração do código para envio.
-
+- [ ] Utilizar GPU para o processamento dos dados...

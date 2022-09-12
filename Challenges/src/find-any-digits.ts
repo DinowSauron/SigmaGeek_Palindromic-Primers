@@ -41,32 +41,62 @@ function GetPI_fromArchive(achiveNumber=0){
 export function DetectPalindromicsInPI(digits=9, pi='3141', piStart=0, debug=true){
   
   const startDate = new Date();
+  let recallDigits = digits;
   let lastDigits = [0];
 
   for(var n=0; n < pi.length;n++) {
     // Create the last digits
     lastDigits.length = digits - 1;
-    const currentDigits = [Number(pi[n]), ...(lastDigits)]
-    lastDigits = currentDigits;
+    const currentDigits = [Number(pi[n]), ...(lastDigits)];
 
-    // if have enought digits, search for palindromics
-    if(n >= digits-1){
-      const index =  n-digits+1;
-      IsPalindromic(currentDigits, index)
+
+    if(Detect(currentDigits)){ // odd
+      // recall = true;
+      const index =  n-digits;
+      IsPrime(currentDigits.toString().replaceAll(",", ""), index + piStart);
+
+      
+      const newDigit = digits + 2;
+      if(digits < newDigit) 
+        recallDigits = newDigit;
+        
     }
-    if(debug && n % settings.debug.logRange == 0){ // every 1.000k
-      console.log(`Detect x"${n.toString().padStart(10," ")}  In ${(piStart + n).toLocaleString()}`)
+
+    currentDigits.pop(); // remove 1 to even
+    if(Detect(currentDigits)){ // even
+      // recall = true;
+      const index =  n-digits;
+      IsPrime(currentDigits.toString().replaceAll(",", ""), index + piStart);
+
+      
+      const newDigit = digits + 1;
+      if(digits < newDigit) 
+        recallDigits = newDigit;
+    }
+    lastDigits = currentDigits;
+    
+    //(n % settings.debug.logRange == 0) ? console.log(`Detect x"${n.toString().padStart(10," ")}  In ${(piStart + n).toLocaleString()}`):""
+
+    function Detect(currentDigits: number[]) {
+      const index =  n-currentDigits.length+1;
+      if(IsPalindromic(currentDigits, index)){
+        return true;
+      };
+      return false;
     }
   }
   if(debug)
   console.log("Finished Detection In "+ (new Date().getTime() - startDate.getTime()) + "ms");
 
-
+  if(recallDigits > digits) {
+    console.log("Recall Actived:", recallDigits, "in", piStart)
+    DetectPalindromicsInPI(recallDigits, pi, piStart);
+  }
 
 
   function IsPalindromic(num: number[], index: number) {
     if(num[0] != num[num.length-1])
-      return;
+      return false;
     
     var isPalindromic = true;
     for(var x=1,y = num.length-2; x < y;x++, y--)
@@ -76,11 +106,12 @@ export function DetectPalindromicsInPI(digits=9, pi='3141', piStart=0, debug=tru
       }
     
     if(isPalindromic){
-      console.log("Find Palindromic:", num.join(""), " > at ", index + piStart);
-      IsPrime(num.toString().replaceAll(",", ""), index + piStart);
-    }
-  }
+      console.log("Find Palindromic:", num.join(""), " > at ", (index + piStart + 1));// + settings.useArchive.archiveX_100b));  VERIFY THIS POSITION
 
+      return true;
+    }
+    return false;
+  }
 
   function IsPrime(num: string, index=0){
     const startDate = new Date();
@@ -96,32 +127,34 @@ export function DetectPalindromicsInPI(digits=9, pi='3141', piStart=0, debug=tru
         isPrime = false;
         break;
       }
-      if(i % 100000003n === 0n) {
+      if(i % 30000003n === 0n) {
         if(i.toString().length >= numLong.toString().length/2+1)
           break;
         if(i >= 100000000*5)
           break;
         
-        settings.debug.advancedMode && console.log("X 100.000.000     >", num,"of ",i);
+        console.log("X 30.000.000     >", num,"of ",i);
       }
     }
 
 
     if(isPrime){
+      const digitsNum = num.toString().length;
       console.log(`The Number ${num} is PRIME               -                Saved.`)
       console.log("Finished in "+ (new Date().getTime() - startDate.getTime()) + "ms")
       var prevTxt = "";
-      if(fs.existsSync(`./saves/primes_x-${digits}.txt`))
-      prevTxt = fs.readFileSync(`./saves/primes_x-${digits}.txt`,{encoding:'utf8'});
-
+      if(fs.existsSync(`./saves/primes_x-${digitsNum}.txt`))
+      prevTxt = fs.readFileSync(`./saves/primes_x-${digitsNum}.txt`,{encoding:'utf8'});
+      const x100b = settings.useArchive.archiveX_100b;
       const saveTxt = prevTxt + "\n" +
       startDate.toISOString().replace(/T/, ' ').replace(/\..+/, '')  + " > " +
-      num.toString().replaceAll(",",", ") + "  at >  "+ index;
-      fs.writeFileSync(`./saves/primes_x-${digits}.txt`, saveTxt)
+      num.toString().replaceAll(",",", ") + "  at >  "+ (index + 1) +"  |   FindZone / "+ piStart;
+
+      fs.writeFileSync(`./saves/primes_x-${digitsNum}.txt`, saveTxt)
     }
   }
-
 }
+
 
 function Start(){
   const digits = settings.digitsToFind;
@@ -170,7 +203,7 @@ function saveArchive(txt: string){
 }
 
 
-Start();
+//Start();
 
 
 

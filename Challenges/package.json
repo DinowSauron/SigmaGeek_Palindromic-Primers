@@ -9,7 +9,7 @@
   "scripts": {
     "mt": "ts-node-dev src/MultiThread.ts",
     "start": "ts-node-dev src/find-any-digits.ts",
-    "test": "ts-node-dev src/test.ts",
+    "search": "ts-node-dev src/get-pi-delivery.ts",
     "q3": "ts-node-dev src/worker.ts",
     "build": "npx tsc"
   },
