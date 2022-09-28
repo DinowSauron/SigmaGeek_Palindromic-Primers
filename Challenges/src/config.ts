@@ -1,32 +1,37 @@
 // palindromic finder editor
+import fs from "fs"
 
 
+interface ConfigProps {
+  digitsToFind: number,
+  coreCount: number,
+  useArchive: {
+    archivesLocation: string, 
+    archivesNames: string,
+    archiveX_100b: number, 
+    firstArchive: number,
+    lastArchive: number
+  },
+
+  useGeneration: {
+    use: boolean,
+    numbersOfDecimals: number
+  },
+
+  debug: {
+    advancedMode: boolean,
+    logRange: number
+  }
+} 
 function Config(){
 
-  return {
-    digitsToFind: 23,
-    coreCount: 5,
+  if(fs.existsSync(`./config.json`)){
+    const props = JSON.parse(fs.readFileSync(`./config.json`, {encoding:'utf8'})) as ConfigProps;
+    return props
+  }
+  else {
+    throw new Error("Not find config.json")
+  }
 
-    useArchive: {
-      archivesLocation: "./pi_archives/", // path to locate the archives
-      archivesNames: "pi_dec_100t_20.txt", // pi_dec_1t_00.txt.001 > remove .001
-      archiveX_100b: 20, // the split occurs in 100bi, so what of these splits you are using?
-
-      
-      firstArchive: 281, // if .001 put 1 || if .014 put 14 
-      lastArchive: 477, // 100bi / 209,415,200(200Mb) = 477 archives
-    },
-
-    // use this to generate PI from your machine. this is kinda slow, just work to the first 9 digits or below
-    useGeneration: {
-      use: false,
-      numbersOfDecimals: 140000, 
-    },
-
-    debug: {
-      advancedMode: false,
-      logRange: 40000000,
-    }
-  } 
 }
 export default Config();

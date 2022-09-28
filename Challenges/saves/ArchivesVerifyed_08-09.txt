@@ -1,0 +1,424 @@
+
+New Verification in: 26/08/2022 22:59:41  23D
+(999) Archive 1 > Completed Verification.
+(999) Archive 410 > Completed Verification.
+
+New Verification in: 27/08/2022 13:05:49  23D
+(999) Archive 411 > Completed Verification.
+(999) Archive 477 > Completed Verification.
+
+
+New Verification in: 28/08/2022 01:37:59  23D
+(10) Archive 1 > Completed Verification.
+(10) Archive 393 > Completed Verification.
+
+New Verification in: 28/08/2022 16:19:00  23D
+(10) Archive 394 > Completed Verification.
+(10) Archive 449 > Recall Actived.  Digits: 25 
+(10) Archive 449 > Completed Verification.
+(10) Archive 477 > Completed Verification.
+
+
+
+11 > 
+
+New Verification in: 29/08/2022 00:11:15  23D
+(11) Archive 1 > Completed Verification.
+(11) Archive 177 > Recall Actived.  Digits: 25
+(11) Archive 177 > Completed Verification.
+(11) Archive 198 > Recall Actived.  Digits: 24
+(11) Archive 198 > Completed Verification.
+(11) Archive 300 > Completed Verification.
+
+New Verification in: 29/08/2022 07:56:02  23D
+(11) Archive 301 > Completed Verification.
+(11) Archive 327 > Recall Actived.  Digits: 25
+(11) Archive 327 > Completed Verification.
+(11) Archive 441 > Completed Verification.
+
+New Verification in: 29/08/2022 12:10:54  23D
+(11) Archive 442 > Completed Verification.
+(11) Archive 461 > Completed Verification.
+
+New Verification in: 29/08/2022 12:41:26  23D
+(11) Archive 462 > Completed Verification.
+(11) Archive 477 > Completed Verification.
+
+
+
+New MultiThread Implemented:
+
+12 >
+
+New Verification in: 29/08/2022 22:02:24  23D  - 5 Threads
+(12) Archive 1 > Completed Verification.
+(12) Archive 70 > Completed Verification.
+
+New Verification in: 29/08/2022 22:47:12  23D  - 5 Threads
+(12) Archive 70 > Completed Verification.
+(12) Archive 278 > Recall Actived.  Digits: 24
+(12) Archive 281 > Recall Actived.  Digits: 25
+(12) Archive 278 > Completed Verification.
+(12) Archive 281 > Completed Verification.
+(12) Archive 293 > Recall Actived.  Digits: 25               
+(12) Archive 293 > Completed Verification.
+(12) Archive 296 > Completed Verification.
+
+New Verification in: 30/08/2022 01:08:14  23D  - 5 Threads
+(12) Archive 295 > Completed Verification.
+(12) Archive 301 > Recall Actived.  Digits: 24
+(12) Archive 304 > Recall Actived.  Digits: 25
+(12) Archive 301 > Completed Verification.
+(12) Archive 304 > Completed Verification.
+(12) Archive 323 > Recall Actived.  Digits: 25
+(12) Archive 323 > Completed Verification.
+(12) Archive 359 > Completed Verification.
+
+New Verification in: 30/08/2022 10:49:23  23D  - 5 Threads
+(12) Archive 354 > Completed Verification.
+(12) Archive 421 > Recall Actived.  Digits: 25
+(12) Archive 421 > Completed Verification.
+(12) Archive 477 > Completed Verification. ok
+
+
+13 >
+
+New Verification in: 30/08/2022 13:48:11  23D  - 5 Threads
+(13) Archive 1 > Completed Verification.
+(13) Archive 6 > Completed Verification.
+
+New Verification in: 30/08/2022 14:07:14  23D  - 5 Threads
+(13) Archive 8 > Completed Verification.
+(13) Archive 7 > Recall Actived.  Digits: 24
+(13) Archive 7 > Completed Verification.
+(13) Archive 183 > Completed Verification. ok
+
+New Verification in: 30/08/2022 18:37:03  23D  - 5 Threads
+(13) Archive 184 > Completed Verification.
+(13) Archive 205 > Recall Actived.  Digits: 25
+(13) Archive 205 > Recall Actived.  Digits: 27
+(13) Archive 205 > Completed Verification.
+(13) Archive 477 > Completed Verification. 
+
+
+14 >
+
+New Verification in: 30/08/2022 22:19:16  23D  - 5 Threads
+(14) Archive 1 > Completed Verification.
+(14) Archive 91 > Recall Actived.  Digits: 25
+(14) Archive 91 > Completed Verification.
+(14) Archive 313 > Recall Actived.  Digits: 24
+(14) Archive 313 > Completed Verification.
+(14) Archive 477 > Completed Verification. 
+
+
+15 >
+
+New Verification in: 31/08/2022 14:08:17  23D  - 5 Threads
+(15) Archive 1 > Completed Verification.
+(15) Archive 12 > Recall Actived.  Digits: 25
+(15) Archive 12 > Completed Verification.
+(15) Archive 151 > Recall Actived.  Digits: 25
+(15) Archive 151 > Recall Actived.  Digits: 27
+(15) Archive 151 > Completed Verification.
+(15) Archive 271 > Recall Actived.  Digits: 25
+(15) Archive 271 > Completed Verification.
+(15) Archive 300 > Recall Actived.  Digits: 25
+(15) Archive 300 > Completed Verification.
+(15) Archive 314 > Recall Actived.  Digits: 24
+(15) Archive 314 > Completed Verification.
+(15) Archive 477 > Completed Verification.
+
+
+16 >
+
+New Verification in: 31/08/2022 19:29:31  23D  - 5 Threads
+(16) Archive 1 > Completed Verification.
+(16) Archive 92 > Recall Actived.  Digits: 24
+(16) Archive 92 > Completed Verification.
+(16) Archive 475 > Recall Actived.  Digits: 24
+(16) Archive 475 > Completed Verification.
+(16) Archive 477 > Completed Verification.
+
+17 > 
+
+New Verification in: 01/09/2022 01:27:39  23D  - 5 Threads
+(17) Archive 1 > Completed Verification.
+(17) Archive 35 > Completed Verification. ok
+New Verification in: 01/09/2022 10:13:50  23D  - 5 Threads
+(17) Archive 36 > Completed Verification.
+(17) Archive 74 > Completed Verification. ok
+New Verification in: 01/09/2022 11:01:21  23D  - 5 Threads
+(17) Archive 74 > Completed Verification.
+(17) Archive 88 > Completed Verification. ok
+New Verification in: 01/09/2022 11:20:16  23D  - 5 Threads
+(17) Archive 89 > Completed Verification.
+(17) Archive 113 > Completed Verification. ok
+New Verification in: 01/09/2022 11:36:09  23D  - 5 Threads
+(17) Archive 114 > Completed Verification.
+(17) Archive 132 > Completed Verification. ok
+New Verification in: 01/09/2022 14:45:31  23D  - 5 Threads
+(17) Archive 133 > Completed Verification.
+(17) Archive 477 > Completed Verification.
+
+18 >
+
+New Verification in: 01/09/2022 19:10:16  23D  - 5 Threads
+(18) Archive 1 > Completed Verification.
+(18) Archive 24 > Recall Actived.  Digits: 24
+(18) Archive 24 > Completed Verification.
+(18) Archive 285 > Recall Actived.  Digits: 25
+(18) Archive 285 > Completed Verification.
+(18) Archive 421 > Recall Actived.  Digits: 25
+(18) Archive 421 > Completed Verification.
+(18) Archive 427 > Recall Actived.  Digits: 25
+(18) Archive 427 > Completed Verification.
+(18) Archive 477 > Completed Verification.
+
+19 >
+
+New Verification in: 02/09/2022 01:30:19  23D  - 5 Threads
+(19) Archive 1 > Completed Verification.
+(19) Archive 116 > Completed Verification. ok
+
+New Verification in: 02/09/2022 11:17:01  23D  - 5 Threads
+(19) Archive 117 > Completed Verification.
+(19) Archive 118 > Recall Actived.  Digits: 24
+(19) Archive 118 > Completed Verification.
+(19) Archive 260 > Recall Actived.  Digits: 24
+(19) Archive 260 > Completed Verification.
+(19) Archive 387 > Recall Actived.  Digits: 24
+(19) Archive 387 > Completed Verification.
+(19) Archive 415 > Completed Verification. ok
+
+New Verification in: 02/09/2022 14:25:43  23D  - 5 Threads
+(19) Archive 416 > Completed Verification.
+(19) Archive 445 > Completed Verification. ok
+
+New Verification in: 02/09/2022 15:23:25  23D  - 5 Threads
+(19) Archive 446 > Completed Verification.
+(19) Archive 477 > Completed Verification.
+
+
+20 > 
+
+New Verification in: 02/09/2022 17:29:05  23D  - 5 Threads
+(20) Archive 1 > Completed Verification.
+(20) Archive 174 > Recall Actived.  Digits: 24
+
+...
+
+New Verification in: 03/09/2022 00:51:48  23D  - 4 Threads
+(20) Archive 306 > Completed Verification.
+(20) Archive 477 > Completed Verification.
+
+653 >
+
+New Verification in: 03/09/2022 12:19:19  23D  - 4 Threads
+(653) Archive 1 > Completed Verification.
+(653) Archive 271 > Recall Actived.  Digits: 24
+(653) Archive 271 > Completed Verification.
+(653) Archive 322 > Recall Actived.  Digits: 25
+(653) Archive 322 > Completed Verification.
+(653) Archive 477 > Completed Verification.
+
+
+
+21 >
+
+New Verification in: 03/09/2022 17:21:35  23D  - 4 Threads
+(21) Archive 1 > Completed Verification.
+(21) Archive 28 > Completed Verification.
+
+New Verification in: 03/09/2022 18:03:18  23D  - 4 Threads
+(21) Archive 29 > Completed Verification.
+(21) Archive 67 > Completed Verification.
+
+50, 51 bugged hardly
+
+New Verification in: 03/09/2022 18:54:08  23D  - 4 Threads
+(21) Archive 52 > Completed Verification.
+(21) Archive 107 > Recall Actived.  Digits: 25
+(21) Archive 107 > Completed Verification.
+(21) Archive 209 > Recall Actived.  Digits: 25                              > FIND THE PALINDROMIC
+(21) Archive 209 > Completed Verification.
+(21) Archive 477 > Completed Verification.
+
+
+
+22 >
+
+New Verification in: 03/09/2022 23:39:40  23D  - 4 Threads
+(22) Archive 1 > Completed Verification.
+(22) Archive 48 > Completed Verification.
+
+New Verification in: 04/09/2022 00:12:49  23D  - 4 Threads
+(22) Archive 49 > Completed Verification.
+(22) Archive 80 > Recall Actived.  Digits: 25
+(22) Archive 80 > Completed Verification.
+(22) Archive 106 > Recall Actived.  Digits: 24
+(22) Archive 106 > Completed Verification.
+(22) Archive 388 > Completed Verification.
+
+New Verification in: 04/09/2022 11:14:51  23D  - 4 Threads
+(22) Archive 389 > Completed Verification.
+(22) Archive 431 > Recall Actived.  Digits: 24
+(22) Archive 431 > Completed Verification.
+(22) Archive 477 > Completed Verification.
+
+
+23 >
+
+
+New Verification in: 04/09/2022 12:42:23  23D  - 4 Threads
+
+New Verification in: 04/09/2022 12:47:58  23D  - 4 Threads
+(23) Archive 1 > Completed Verification.
+(23) Archive 117 > Recall Actived.  Digits: 25
+(23) Archive 117 > Completed Verification.
+(23) Archive 206 > Completed Verification.                 205 not
+
+New Verification in: 04/09/2022 15:00:25  23D  - 4 Threads
+(23) Archive 207 > Completed Verification.
+(23) Archive 477 > Completed Verification.
+
+New Verification in: 04/09/2022 17:50:00  23D  - 1 Threads
+(23) Archive 205 > Completed Verification.
+
+New Verification in: 04/09/2022 18:24:51  23D  - 4 Threads
+(24) Archive 1 > Completed Verification.
+(24) Archive 356 > Recall Actived.  Digits: 25
+(24) Archive 356 > Completed Verification
+(24) Archive 477 > Completed Verification.
+
+
+New Verification in: 04/09/2022 23:41:56  23D  - 4 Threads
+(25) Archive 1 > Completed Verification.
+(25) Archive 101 > Completed Verification.
+
+New Verification in: 05/09/2022 01:04:53  23D  - 4 Threads
+(25) Archive 102 > Completed Verification.
+(25) Archive 173 > Recall Actived.  Digits: 25
+(25) Archive 173 > Completed Verification.
+(25) Archive 184 > Recall Actived.  Digits: 24
+(25) Archive 184 > Completed Verification.
+(25) Archive 403 > Completed Verification.
+
+New Verification in: 05/09/2022 12:41:15  23D  - 4 Threads
+(25) Archive 406 > Completed Verification.
+(25) Archive 477 > Completed Verification.
+
+
+
+--- Spaced ---
+
+
+
+221 >
+
+New Verification in: 05/09/2022 14:18:09  23D  - 4 Threads
+(221) Archive 1 > Completed Verification.
+(221) Archive 477 > Completed Verification.
+
+
+222 >
+
+New Verification in: 05/09/2022 21:38:09  23D  - 4 Threads
+(222) Archive 1 > Completed Verification.
+(222) Archive 24 > Recall Actived.  Digits: 25
+(222) Archive 24 > Completed Verification.
+(222) Archive 401 > Recall Actived.  Digits: 24
+(222) Archive 401 > Completed Verification.
+(222) Archive 477 > Completed Verification.
+
+
+223 >
+
+New Verification in: 06/09/2022 03:15:26  23D  - 4 Threads
+(223) Archive 1 > Completed Verification.
+(223) Archive 32 > Recall Actived.  Digits: 24
+(223) Archive 32 > Completed Verification.
+(223) Archive 66 > Recall Actived.  Digits: 24
+(223) Archive 66 > Recall Actived.  Digits: 26
+(223) Archive 66 > Completed Verification.
+(223) Archive 181 > Recall Actived.  Digits: 25
+(223) Archive 181 > Completed Verification.
+(223) Archive 190 > Completed Verification.
+
+New Verification in: 06/09/2022 13:28:26  23D  - 4 Threads
+(223) Archive 191 > Completed Verification.
+(223) Archive 292 > Recall Actived.  Digits: 24
+(223) Archive 292 > Completed Verification.
+(223) Archive 353 > Recall Actived.  Digits: 25
+(223) Archive 353 > Completed Verification.
+(223) Archive 372 > Recall Actived.  Digits: 25
+(223) Archive 372 > Completed Verification.
+(223) Archive 429 > Recall Actived.  Digits: 24
+(223) Archive 429 > Completed Verification.
+(223) Archive 464 > Recall Actived.  Digits: 25
+(223) Archive 464 > Completed Verification.
+(223) Archive 477 > Completed Verification.
+
+
+224 >
+
+New Verification in: 06/09/2022 18:07:49  23D  - 4 Threads
+(224) Archive 1 > Completed Verification.
+(224) Archive 401 > Recall Actived.  Digits: 24
+(224) Archive 401 > Completed Verification.
+(224) Archive 477 > Completed Verification.
+
+
+225 >
+
+New Verification in: 06/09/2022 23:37:49  23D  - 4 Threads
+(225) Archive 1 > Completed Verification.
+(225) Archive 4 > Completed Verification. 
+
+New Verification in: 06/09/2022 23:42:47  23D  - 4 Threads
+(225) Archive 5 > Completed Verification.
+(225) Archive 300 > Recall Actived.  Digits: 25                    FIND 23 DIGITS
+(225) Archive 300 > Completed Verification.
+(225) Archive 442 > Completed Verification.
+
+New Verification in: 07/09/2022 12:51:53  23D  - 4 Threads
+(225) Archive 442 > Completed Verification.
+(225) Archive 477 > Completed Verification.
+
+
+226 >
+ 
+New Verification in: 07/09/2022 13:36:34  23D  - 4 Threads
+(226) Archive 1 > Completed Verification.
+(226) Archive 477 > Completed Verification.
+
+
+227 >
+
+
+New Verification in: 07/09/2022 20:06:35  23D  - 4 Threads
+(227) Archive 1 > Completed Verification.
+(227) Archive 354 > Recall Actived.  Digits: 24
+(227) Archive 354 > Completed Verification.
+(227) Archive 396 > Recall Actived.  Digits: 24
+(227) Archive 396 > Completed Verification.
+(227) Archive 400 > Recall Actived.  Digits: 25
+(227) Archive 400 > Completed Verification.
+(227) Archive 477 > Completed Verification.
+
+
+228 >
+
+New Verification in: 08/09/2022 13:46:01  23D  - 4 Threads
+(228) Archive 1 > Completed Verification.
+(228) Archive 142 > Completed Verification.
+
+New Verification in: 08/09/2022 16:26:20  23D  - 4 Threads
+(228) Archive 143 > Completed Verification.
+(228) Archive 269 > Completed Verification.
+
+New Verification in: 08/09/2022 17:47:14  23D  - 4 Threads
+(228) Archive 270 > Completed Verification.
+(228) Archive 350 > Recall Actived.  Digits: 25
+(228) Archive 350 > Completed Verification.
+(228) Archive 477 > Completed Verification.

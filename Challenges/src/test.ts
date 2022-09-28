@@ -1,16 +1,7 @@
-import fs from "fs";
 
-var numVerify = 18066462671417626466081n
-
-
-while (true) {
-  IsPrime(numVerify.toString(), 0);
-  numVerify++
-
-  if(numVerify % 50n === 0n) {
-    console.log(numVerify)
-  }
-}
+var numVerify = 1237n
+// why palindromic prime digits not have has pair ex: 2552, 123321... ???
+IsPrime(numVerify.toString(), 0)
 
 
 
@@ -31,29 +22,31 @@ function IsPrime(num: string, index=0){
       isPrime = false;
       break;
     }
-    if(i % 10000003n === 0n) {
+    if(i % 25000003n === 0n) {
       if(i.toString().length >= numLong.toString().length/2+1)
         break;
-      if(i >= 10000000*5)
+      if(i >= 100000000*5)
         break;
       
-      console.log("X 100.000.000     >", num,"of ",i);
+      console.log("X 25.000.000     >", num,"of ",i);
     }
   }
 
 
   if(isPrime){
+    console.log("its prime")
+    /*
     const digitsNum = num.toString().length;
     console.log(`The Number ${num} is PRIME               -                Saved.`)
     console.log("Finished in "+ (new Date().getTime() - startDate.getTime()) + "ms")
     var prevTxt = "";
     if(fs.existsSync(`./saves/primes_x-${digitsNum}.txt`))
     prevTxt = fs.readFileSync(`./saves/primes_x-${digitsNum}.txt`,{encoding:'utf8'});
-    const x100b = 0;
+    const x100b = 10000000;
     const saveTxt = prevTxt + "\n" +
     startDate.toISOString().replace(/T/, ' ').replace(/\..+/, '')  + " > " +
-    num.toString().replaceAll(",",", ") + "  at >  "+ (index + 1) +"  | AchiveX100b:" + x100b + " / of testing";
+    num.toString().replaceAll(",",", ") + "  at >  "+ (index + 1) +"  | AchiveX100b:" + x100b + " / test";
 
-    fs.writeFileSync(`./saves/primes_x-${digitsNum}.txt`, saveTxt)
+    fs.writeFileSync(`./saves/primes_x-${digitsNum}.txt`, saveTxt)*/
   }
 }

@@ -1,0 +1,25 @@
+{
+  "digitsToFind": 23,
+  "coreCount": 4,
+
+  "useArchive": {
+    "archivesLocation": "./pi_archives/", 
+    "archivesNames": "pi_dec_100t_263.txt",
+    "archiveX_100b": 263, 
+
+    
+    "firstArchive": 1,
+
+    "lastArchive": 477
+  },
+
+  "useGeneration": { 
+    "use": false,
+    "numbersOfDecimals": 140000
+  },
+
+  "debug": {
+    "advancedMode": false,
+    "logRange": 40000000
+  }
+} 

@@ -3,15 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "licenses": [
-    "MIT"
-  ],
   "scripts": {
     "mt": "ts-node-dev src/MultiThread.ts",
-    "start": "ts-node-dev src/find-any-digits.ts",
     "search": "ts-node-dev src/get-pi-delivery.ts",
     "q3": "ts-node-dev src/worker.ts",
-    "build": "npx tsc"
+    "test": "ts-node-dev src/test.ts", 
+    "build": "npx tsc",
+    "start": "node ./dist/MultiThread.js"
   },
   "devDependencies": {
     "@types/node": "^18.7.8",

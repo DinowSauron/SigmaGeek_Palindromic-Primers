@@ -1,29 +1,52 @@
 
 # Challenges:
 
-Made by: Luiz Claudio Celestino Cardoso
+* Made by: __Luiz Claudio Celestino Cardoso__
+* My english level is intermediate, so let's go!
 
-Portfolio: https://luizclaudio.dev.br/
-Github: https://github.com/DinowSauron
-linked-in: https://www.linkedin.com/in/luiz-claudio-cardoso/
+<br/>
+<br/>
+<br/>
 
+- Portfolio: https://luizclaudio.dev.br/
+- Github: https://github.com/DinowSauron
+- linked-in: https://www.linkedin.com/in/luiz-claudio-cardoso/
 
-## see the repo in: https://github.com/DinowSauron/SigmaGeek_Palindromic-Primers/tree/main/Challenges
+<br/>
+<br/>
 
+### see the repo in: https://github.com/DinowSauron/SigmaGeek_Palindromic-Primers/tree/main/Challenges 
+* I will update after 30/09
+
+* Archives verifyed: (i aleatorily pick ones)
+    ``` 0,1,2,3,4,5,
+    10,11,12,13,14,15,16,17,18,19,20,21,22,23,
+    221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,
+    999,653,767,545 
 ---
 
+! i'm using yarn, if you want to use npm, just run `npm run [command]`
 
-# How to run this code
+# How to run this code:
 
 !- If you just want see the code running, this repo has all necessary file to see the 21 digit palindromic prime!
 
-1 - You need download the archives of PI here: https://storage.googleapis.com/pi100t/index.html, each archive has 100billions of digits (download in decimals)
-2 - And you need the ycruncher to descompact the archive, you can download here: http://www.numberworld.org/y-cruncher/ and descompact in `pi_archives`
-3 - The last step is spit the archive in many of archives, because javascript have a limit of 500Mb in strings, you need a program to do that for you, i used `PeaZip` and split in 200Mb files, and this is more easy to find something...
-4 - enter in src/config.ts and put archivesLocation the location of your files and put the archivesNames the name of splited file without the extension `ex: pi-500.txt.001  you put only: archivesNames: "pi-500.txt"` 
-5 - chose the first archive, in case of 001, you put 1...
-6 - in archiveX_100b you put the number of downloaded file, if you downloaded the file number 0, put 0, if file is 37, put 37. this will count in x100bi the position of your number
-7 - when the search is finishe, if you dont find anything in /saves just download another file and repeat the process...
+## 1) Using file search:
+1) You need download the archives of PI here: https://storage.googleapis.com/pi100t/index.html, each archive has 100billions of digits (download in decimals)
+2) And you need the ycruncher to descompact the archive, you can download here: http://www.numberworld.org/y-cruncher/ and descompact in `pi_archives`
+3) The last step is spit the archive in many of archives, because javascript have a limit of 500Mb in strings, you need a program to do that for you, i used `PeaZip` and split in 200Mb files, and this is more easy to save your progress.
+4) enter in /config.json and put "archivesLocation" the location of your files and put the "archivesNames" the name of splited file without the extension `ex: pi-500.txt.001 | you put only: archivesNames: "pi-500.txt"` 
+5) choose the "firstArchive", in case of 001, you put 1...
+6) in "archiveX_100b" you put the number of downloaded file, if you downloaded the file number 0, put 0, if file is 37, put 37. this will count in x100bi the position of your number
+7) Run `yarn mt` to do multithreading search in archives. (i prefer run `yarn build` and `yarn start` i think this is more optimized the build version 2-4 seconds...)
+8) when the search is finished, if you dont find anything in /saves just download another file and repeat the process...
+
+## 2) Using Aleatory Search: (easy way to run the code)
+1) just run `yarn search` and you will search for aleatory positions in pi number! using ethernet and is very slow process...
+    * he will search for 10-11 digits palindromic, but if exist a palindromic with more digits he will find too
+
+<br/>
+<br/>
 
 
 ### All codes running on:
@@ -34,83 +57,17 @@ linked-in: https://www.linkedin.com/in/luiz-claudio-cardoso/
 * SSD: no SSD used.
 * GPU: GTX 950 2Gb (basically not used for calculation).
 
-Verify Rate: 9 Bi/h.
 
 <br/>
 <br/>
  
 ## Find large palindromic prime numbers in the decimal expansion of π (3,1415…)
 
-* Q1 > Find the first 9-digit palindromic prime contained in the decimal expansion of π (3,1415…)
-  - Is: 318272813, Starting At 129079
-  - Put in the config.ts:
-  ```ts
-  return {
-    digitsToFind: 9,
-
-    useArchive: {
-      archivesLocation: "",
-      archivesNames: "",
-      archiveX_100b: 0,
-      firstArchive: 1,
-      lastArchive: 1,
-    },
-    useGeneration: {
-      use: true,
-      numbersOfDecimals: 140000, 
-    },
-    debug: {
-      advancedMode: true,
-      logRange: 10000000,
-    }
-  }
-  ```
-  - `yarn install` > to install vite / typescript, etc...
-  - and Run `yarn start` and wait a 2-3minutes  
-  - the result will be saved at `./saves/primes_x-9.txt`
-
----
-
-* Q2 > Find the first 21-digit palindromic prime contained in the decimal expansion of π (3,1415…)
-  - Is: 151978145606541879151, Starting at 140672630233
-  - Download this archive: [Pi Dec - Chudnovsky - 1](https://storage.googleapis.com/pi100t/Pi%20-%20Dec%20-%20Chudnovsky/Pi%20-%20Dec%20-%20Chudnovsky%20-%201.ycd)
-  - Descompact using [y-cruncher](http://www.numberworld.org/y-cruncher/) and use [PeaZip](https://peazip.github.io/peazip-64bit.html) ans split in volumes of 200Mb _(or use anything that can split without compress)_
-  - If you do it correctly, the archive that have the code is the 194º
-  - So, Put this in the config.ts:
-   ```ts
-   return {
-    digitsToFind: 21,
-    useArchive: {
-      archivesLocation: "./pi_archives/",
-      archivesNames: "pi_dec_1t_01.txt",
-      archiveX_100b: 1, 
-
-      firstArchive: 194,
-      lastArchive: 194,
-    },
-    useGeneration: {
-      use: false,
-      numbersOfDecimals: 140000, 
-    },
-    debug: {
-      advancedMode: false,
-      logRange: 10000000,
-    }
-  }
-  ``` 
-  - `yarn install` > to install vite / typescript, etc...
-  - and Run `yarn start` and wait a ~180seconds
-  - the result will be saved at `./saves/primes_x-21.txt`
-
----
-
 * Q3 > Find the largest palindromic prime contained in the decimal expansion of π (3,1415…)
   - Is: idk...
-  - i will try finding small palindromic and if i found an small palindromic i will increasing the search to find
-  - and i will do it in backwards, searching 999 to 0, because my experiments say more digits, more far away they are
+  - i will try finding small palindromic and if i found an small palindromic i will increasing the search to find a big one
   - my code gets the position, so its not a problem.
-
-  - verifyed: 999, 10, 
+  - alot of verifications, but i only found 23 digits palindromic prime :(  i was hoping for 25-28
 
   
 <br/>
@@ -119,7 +76,6 @@ Verify Rate: 9 Bi/h.
 ## Some Info's:
 
 * if find a palindromic and nothing is in the terminal is because probably the number is prime and is taking a minute or three to process, if you have doubts of the number, just put the number in http://www.math.com/students/calculators/source/prime-number.htm to get correct answer.
-* the files has 1 digit+ in each number so i recommend to put your number position in get_pi_delivery minus (the number of file * 2) to get the correct positioning of your number.
 
 <br/>
 
@@ -128,20 +84,20 @@ Verify Rate: 9 Bi/h.
 <br/>
 
 # Data's:
-maybe have an alternative to get exact number without verify every possibility ?...
-
-N  | Pos              | N/Pos NPP     |   P.P.
-5  > 488             0| 97,6          |
-7  > 13901           0| 1985,8        | 
-9  > 129079          0| 14342,1       | 318272813
-11 > 5793497         0| 526681,4      | 74670707647
-13 > 25803983        0| 25803983,6    | 1020776770201
-15 > 298503034       0| 19900202,2    | 
-...     
-21 > 140672630233    1| 6698696677,7  | 
-23 > 2143728293286  21|               | 38898292453535429289883
-25 > 3215........? 221|
-
+maybe have an alternative to get exact number without verify every possibility ?... (lol)
+```
+N  | Pos               | N/Pos NPP     |   P.P.
+5  > 488             0 | 97,6          |
+7  > 13901           0 | 1985,8        | 
+9  > 129079          0 | 14342,1       | 318272813
+11 > 5793497         0 | 526681,4      | 74670707647
+13 > 25803983        0 | 25803983,6    | 1020776770201
+15 > 298503034       0 | 19900202,2    | 
+...      
+21 > 140672630233    1 | 6698696677,7  | 
+23 > 2143728293286  21 |               | 38898292453535429289883
+25 > 3215........? 221 | NOT, its another 21 digit
+```
 
 ## Used Fonts:
 - http://ajennings.net/blog/a-million-digits-of-pi-in-9-lines-of-javascript.html#:~:text=Increasing%20the%20number%20of%20digits,pi%20%2F%20(10n%20**%2020n))%3B

@@ -119,13 +119,13 @@ function Start(props: FindBiggestProps) {
           isPrime = false;
           break;
         }
-        if(i % 100000003n === 0n) {
+        if(i % 25000003n === 0n) {
           if(i.toString().length >= numLong.toString().length/2+1)
             break;
           if(i >= 100000000*5)
             break;
           
-          settings.debug.advancedMode && debugLog("X 100.000.000     >", num,"of ",i);
+          debugLog("X 25.000.000     >", num,"of ",i);
         }
       }
 

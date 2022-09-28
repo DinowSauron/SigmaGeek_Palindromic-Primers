@@ -28,42 +28,41 @@ async function getNumbers(startAt=0n, digits=6, arch=0n){
     const plusIndex=Math.ceil(1000-(digits/2));
     //getNumbers(startAt+plusIndex,maxRange,digits) // Recursive function Calling
   })
-  .catch((res: AxiosResponse) =>{
-    throw new Error(res.data);
-    
-  });
 }
-
+/*
 // i'll use this for search between archives!
 // like a for loop, but with smart delay
 // not exist palindromic with 21 digits or more in this range...
-/*function VerifyNumberInBillionRange(StartIndex = 1n,maxIndex = 10n) {
+function VerifyNumberInBillionRange(StartIndex = 1n,maxIndex = 10n) {
   if(StartIndex > maxIndex)
     return
+  const archDigit = 209715200n;
+  const archNum = 14n;
 
-  setTimeout(() => {    //   RRR
-                        //  TTTbbbMMMmmmddd
-    const start = StartIndex * 100000000000n - 500n;
-    getNumbers(start,21,StartIndex)
+  setTimeout(async () => {    //   RRR
+                        //  TTTbbbMMMmmmddd               Archives X 200mb
+    const start = (StartIndex * 100000000000n - 500n) + (archDigit * archNum);
+    getNumbers(start,21, archNum)
 
 
-    VerifyNumberInBillionRange(StartIndex+1n,maxIndex)
-  }, 3000);
+    await VerifyNumberInBillionRange(StartIndex+1n,maxIndex)
+  }, 800);
 }
-VerifyNumberInBillionRange(1n,1000n);*/
+VerifyNumberInBillionRange(1n,999n);
 
 
+*/
 var times = 0n;
 
 async function VerifyRandomNumber(digits: number) {
   setTimeout(async () => {
-    const start = RamdomAnyNumbers(14);
+    const start = BigInt(RamdomAnyNumbers(14).toString());
 
     await getNumbers(start,digits,times);
     times++
 
     await VerifyRandomNumber(digits);
-  }, 200);
+  }, 390);
 
 
   function RamdomAnyNumbers(num: number){
@@ -96,14 +95,16 @@ async function VerifyRandomNumber(digits: number) {
   }
 }
 
-VerifyRandomNumber(12);
+VerifyRandomNumber(10);
 
+
+// i already verifyed this archives and i dont want do this again in aleatory mode...
 const verified = [
   0,1,2,3,4,5,
   10,11,12,13,14,15,16,17,18,19,20,21,22,23,
 
-  221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,  236,237,238,239,
-  999, 653, 767, 545
+  221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,  236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263
+  ,999, 653, 767, 545
 ]
 
 
